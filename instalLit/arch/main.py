@@ -22,7 +22,7 @@ def main(package_name):
         req_page = home_page + package_name
         source = requests.get(req_page)
     
-    
+    print(get_link(source))
 
 
 
