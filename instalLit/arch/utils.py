@@ -70,7 +70,6 @@ def package(package_name):
         req_page = home_page + package_name
         source = requests.get(req_page)
     if source.status_code != 404:
-        print(get_link(source))
+        install(get_link(source))
 
-inp = input()
-package(inp)
+
